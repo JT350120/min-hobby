@@ -8,7 +8,6 @@ body {
   background-position: center; 
   background-size: cover;
   color: white;
-
 }
 
 main {
@@ -24,7 +23,7 @@ nav {
   width: 100vw;
   height: 50px;
   border-bottom: 1px solid white;
-  background-image: linear-gradient(rgb(0,0,0,0),rgb(104,117,149,0.5));;
+  background-image: linear-gradient(rgb(0,0,0,0),rgb(104,117,149,0.6));;
 }
 
 button {
@@ -33,14 +32,21 @@ button {
   font-weight: 200;
   font-size: 16px;
   color: white;
-  padding: 10px;
   width: 120px;
   margin-right: 20px;
   border: none;
   background: none;
+  transition: 0.4s;
 }
 
 button:hover {
   font-weight: 300;
+  transition: 0.2s;
 }
+
+button:active {
+  font-weight: 400;
+  transition: 0.2s;
+}
+
 
