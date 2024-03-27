@@ -6,18 +6,30 @@ const historyBtn = document.querySelector("#historyBtn");
 
 const contentDiv = document.querySelector("#content");
 
-dataBtn.addEventListener("click", createDataDiv);
-galleryBtn.addEventListener("click", createGalleryDiv);
-historyBtn.addEventListener("click", createHistoryDiv);
+dataBtn.addEventListener("click", createDataDivs);
+galleryBtn.addEventListener("click", createGalleryDivs);
+historyBtn.addEventListener("click", createHistoryDivs);
 
-function createDataDiv() {
+function createStartPageDivs() {
+  const picDiv = document.createElement("div");
+  const textDiv = document.createElement("div");
+  picDiv.classList.add("content","contentHalf");
+  textDiv.classList.add("content","contentHalf");
+  picDiv.innerText = "Här kommer det en bild";
+  textDiv.innerText = "Dynamiskt skapad text på startsidan";
+  document.getElementById("content").append(picDiv, textDiv);
+}
+
+function createDataDivs() {
   contentDiv.textContent = 'data';
 }
 
-function createGalleryDiv() {
+function createGalleryDivs() {
   contentDiv.textContent = 'gallery';
 }
 
-function createHistoryDiv() {
+function createHistoryDivs() {
   contentDiv.textContent = 'history';
 }
+
+createStartPageDivs();
