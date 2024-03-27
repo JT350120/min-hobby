@@ -46,8 +46,16 @@ function createGalleryContent() {
 }
 
 function createHistoryContent() {
-  picDiv.textContent = "Här kommer det en bild";
+
+  picDiv.textContent = "";
+  
+  const pic = document.createElement("img");
+  pic.src = "/assets/history.jpg";
+  pic.alt = "Bild på en Aktiv 600 i snön";
+  picDiv.appendChild(pic);
+
   textDiv.textContent = "";
+
   const upperSection = document.createElement("section");
   const lowerSection = document.createElement("section");
   textDiv.append(upperSection, lowerSection);
