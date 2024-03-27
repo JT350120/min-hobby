@@ -23,29 +23,29 @@ nav {
   width: 100vw;
   height: 50px;
   border-bottom: 1px solid white;
-  background-image: linear-gradient(rgb(0,0,0,0),rgb(104,117,149,0.75));;
+  background-image: linear-gradient(rgb(0,0,0,0),rgb(104,117,149,0.75));
 }
 
 button {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 16px;
   color: white;
   width: 120px;
-  margin-right: 20px;
+  margin-right: 5px;
   border: none;
   background: none;
   transition: 0.4s;
 }
 
 button:hover {
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.2s;
 }
 
 button:active {
-  font-weight: 400;
+  font-weight: 500;
   transition: 0.2s;
 }
 
@@ -62,4 +62,6 @@ button:active {
   background-image: linear-gradient(rgb(104,117,149,0.75),rgb(0,0,0,0));
 }
 
-
+.dataContent {
+  flex-direction: column;
+}
