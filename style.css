@@ -49,4 +49,9 @@ button:active {
   transition: 0.2s;
 }
 
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
