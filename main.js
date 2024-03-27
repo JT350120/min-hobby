@@ -15,7 +15,7 @@ historyBtn.addEventListener("click", createHistoryContent);
 
 function createStartPageContent() {
   picDiv.textContent = "Här kommer det en bild";
-  textDiv.textContent = "Dynamiskt skapad text på startsidan";
+  textDiv.textContent = "Min hobby - Aktiv 600";
 }
 
 function createDataContent() {
@@ -46,7 +46,24 @@ function createGalleryContent() {
 }
 
 function createHistoryContent() {
-  contentDiv.textContent = 'history';
+  picDiv.textContent = "Här kommer det en bild";
+  textDiv.textContent = "";
+  const upperSection = document.createElement("section");
+  const lowerSection = document.createElement("section");
+  textDiv.append(upperSection, lowerSection);
+  upperSection.textContent = 
+  `
+  1898 startades företaget Westerås Lantbruksmaskiner i Morgongåva.
+  Snöskotertillverkningen inleddes under 60-talet med modellserien Sno-Tric.
+  1970 bytte företaget namn till Aktiv-Fischer, och tidigt 1979 tillverkades mitt exemplar i fabriken i Morgongåva.
+  `
+  lowerSection.textContent = 
+  `
+  Jag köpte skotern 2021 i Lövånger söder om Skellefteå. 
+  Under min ägo har jag kört fast, mekat och den lilla tid som blivit över däremellan har jag kört hem ved
+   med den som var huvudsyftet från början. Körde fast på tomten vintern 2023/2024 och den får stå där tills 
+   den tinat fram så jag kan köra fast igen nästa säsong.
+  `
 }
 
 createStartPageContent();
