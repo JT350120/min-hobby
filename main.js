@@ -77,7 +77,7 @@ function createGalleryContent() {
   ];
 
   imgFiles.forEach((file) => {
-    const pic = document.createElement("div");
+    const pic = document.createElement("button");
     pic.classList.add("galleryImg");
     pic.style.backgroundImage = `url("/assets/gallery/${file}")`;
 
