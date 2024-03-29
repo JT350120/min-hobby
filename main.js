@@ -109,12 +109,13 @@ function createHistoryContent() {
   rightDiv.append(upperSection, lowerSection);
   upperSection.textContent = 
   `
-  1898 startades företaget Westerås Lantbruksmaskiner i Morgongåva.
+  1898 startades företaget Westerås Lantbruksmaskiner i Morgongåva, Uppland.
   Snöskotertillverkningen inleddes under 60-talet med modellserien Sno-Tric.
-  1970 bytte företaget namn till Aktiv-Fischer, och tidigt 1979 tillverkades mitt exemplar i fabriken i Morgongåva.
+  1970 bytte företaget namn till Aktiv-Fischer (källa: Wikipedia).
   `
   lowerSection.textContent = 
   `
+  Tidigt 1979 tillverkades mitt exemplar i fabriken i Morgongåva. 
   Jag köpte skotern 2021 i Lövånger söder om Skellefteå. 
   Under min ägo har jag kört fast, mekat och den lilla tid som blivit över däremellan har jag kört hem ved
    med den som var huvudsyftet från början. Körde fast på tomten vintern 2023/2024 och den får stå där tills 
