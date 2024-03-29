@@ -14,10 +14,6 @@ galleryBtn.addEventListener("click", createGalleryContent);
 historyBtn.addEventListener("click", createHistoryContent);
 homeBtn.addEventListener("click", createStartPageContent);
 
-dataBtn.addEventListener("click", createDataContent);
-galleryBtn.addEventListener("click", createGalleryContent);
-historyBtn.addEventListener("click", createHistoryContent);
-
 function createStartPageContent() {
   const pic = document.createElement("img");
   pic.src = "/assets/logo1.jpg";
