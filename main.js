@@ -14,7 +14,12 @@ galleryBtn.addEventListener("click", createGalleryContent);
 historyBtn.addEventListener("click", createHistoryContent);
 
 function createStartPageContent() {
-  picDiv.textContent = "Här kommer det en bild";
+  const pic = document.createElement("img");
+  pic.src = "/assets/logo1.jpg";
+  pic.alt = "Bild på Aktivs logotyp";
+  picDiv.appendChild(pic);
+
+  textDiv.style.fontSize = "2em";
   textDiv.textContent = "Min hobby - Aktiv 600";
 }
 
@@ -48,7 +53,7 @@ function createGalleryContent() {
 function createHistoryContent() {
 
   picDiv.textContent = "";
-  
+
   const pic = document.createElement("img");
   pic.src = "/assets/history.jpg";
   pic.alt = "Bild på en Aktiv 600 i snön";
