@@ -86,7 +86,6 @@ function createGalleryContent() {
 
   leftDiv.style.flexDirection = "row";
   leftDiv.style.flexWrap = "wrap";
-  leftDiv.style.justifyContent = "flex-start";
 }
 
 function createHistoryContent() {
