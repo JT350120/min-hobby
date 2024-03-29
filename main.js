@@ -9,6 +9,7 @@ const contentDiv = document.querySelector("#content");
 dataBtn.addEventListener("click", createDataDiv);
 galleryBtn.addEventListener("click", createGalleryDiv);
 historyBtn.addEventListener("click", createHistoryDiv);
+homeBtn.addEventListener("click", createStartPageContent);
 
 function createDataDiv() {
   contentDiv.textContent = 'data';
