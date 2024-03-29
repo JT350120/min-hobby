@@ -19,6 +19,7 @@ function createStartPageContent() {
   picDiv.innerHTML = "";
   textDiv.textContent = "";
   const pic = document.createElement("img");
+  pic.classList.add("startImg");
   pic.src = "/assets/logo1.jpg";
   pic.alt = "Bild på Aktivs logotyp";
   picDiv.appendChild(pic);

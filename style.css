@@ -69,6 +69,9 @@ button:active {
   height: 100%;
   padding: 10px;
   img {
+    width: 75%;
+  }
+  .startImg {
     width: 50%;
   }
 }
