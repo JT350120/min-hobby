@@ -33,6 +33,12 @@ function createDataContent() {
   leftDiv.innerHTML = "";
   rightDiv.innerHTML = "";
   rightDiv.style.backgroundImage = "";
+
+  const pic = document.createElement("img");
+  pic.src = "/assets/warning.jpg";
+  pic.alt = "Bild på varningstext ovanför växelspak";
+  leftDiv.appendChild(pic);
+
   const dataListElement = document.createElement("ul");
 
   const dataList = [
