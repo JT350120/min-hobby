@@ -18,6 +18,8 @@ homeBtn.addEventListener("click", createStartPageContent);
 function createStartPageContent() {
   leftDiv.innerHTML = "";
   rightDiv.innerHTML = "";
+  rightDiv.style.backgroundImage = "";
+  
   const pic = document.createElement("img");
   pic.classList.add("startImg");
   pic.src = "/assets/logo1.jpg";
@@ -30,6 +32,7 @@ function createStartPageContent() {
 function createDataContent() {
   leftDiv.innerHTML = "";
   rightDiv.innerHTML = "";
+  rightDiv.style.backgroundImage = "";
   const dataListElement = document.createElement("ul");
 
   const dataList = [
@@ -53,6 +56,7 @@ function createDataContent() {
 function createGalleryContent() {
   leftDiv.innerHTML = "";
   rightDiv.innerHTML = "";
+  rightDiv.style.backgroundImage = "";
 
   const imgFiles = [
     "1.jpg",
@@ -88,6 +92,7 @@ function createGalleryContent() {
 function createHistoryContent() {
   leftDiv.innerHTML = "";
   rightDiv.innerHTML = "";
+  rightDiv.style.backgroundImage = "";
 
   const pic = document.createElement("img");
   pic.src = "/assets/history.jpg";
