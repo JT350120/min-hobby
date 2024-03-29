@@ -3,6 +3,7 @@ import './style.css'
 const dataBtn = document.querySelector("#dataBtn");
 const galleryBtn = document.querySelector("#galleryBtn");
 const historyBtn = document.querySelector("#historyBtn");
+const homeBtn = document.querySelector("#homeBtn");
 
 const contentDiv = document.querySelector("#content");
 
