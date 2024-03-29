@@ -26,7 +26,7 @@ function createStartPageContent() {
   pic.alt = "Bild på Aktivs logotyp";
   leftDiv.appendChild(pic);
   
-  rightDiv.textContent = "Min hobby - Aktiv 600";
+  rightDiv.innerHTML = `<span>En enkel sida om Aktiv 600</span>`;
 }
 
 function createDataContent() {
