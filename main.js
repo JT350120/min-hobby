@@ -7,8 +7,8 @@ const homeBtn = document.querySelector("#homeBtn");
 
 const contentDiv = document.querySelector("#content");
 
-const picDiv = document.querySelector("#picDiv");
-const textDiv = document.querySelector("#textDiv");
+const leftDiv = document.querySelector("#leftDiv");
+const rightDiv = document.querySelector("#rightDiv");
 
 dataBtn.addEventListener("click", createDataContent);
 galleryBtn.addEventListener("click", createGalleryContent);
@@ -16,20 +16,20 @@ historyBtn.addEventListener("click", createHistoryContent);
 homeBtn.addEventListener("click", createStartPageContent);
 
 function createStartPageContent() {
-  picDiv.innerHTML = "";
-  textDiv.textContent = "";
+  leftDiv.innerHTML = "";
+  rightDiv.textContent = "";
   const pic = document.createElement("img");
   pic.classList.add("startImg");
   pic.src = "/assets/logo1.jpg";
   pic.alt = "Bild på Aktivs logotyp";
-  picDiv.appendChild(pic);
+  leftDiv.appendChild(pic);
   
-  textDiv.textContent = "Min hobby - Aktiv 600";
+  rightDiv.textContent = "Min hobby - Aktiv 600";
 }
 
 function createDataContent() {
-  picDiv.innerHTML = "";
-  textDiv.textContent = "";
+  leftDiv.innerHTML = "";
+  rightDiv.textContent = "";
   const dataListElement = document.createElement("ul");
 
   const dataList = [
@@ -47,26 +47,26 @@ function createDataContent() {
     dataListElement.appendChild(listItem);
   })
 
-  textDiv.appendChild(dataListElement);
+  rightDiv.appendChild(dataListElement);
 }
 
 function createGalleryContent() {
-  picDiv.innerHTML = "";
-  textDiv.textContent = "";
+  leftDiv.innerHTML = "";
+  rightDiv.textContent = "";
 }
 
 function createHistoryContent() {
-  picDiv.innerHTML = "";
-  textDiv.textContent = "";
+  leftDiv.innerHTML = "";
+  rightDiv.textContent = "";
 
   const pic = document.createElement("img");
   pic.src = "/assets/history.jpg";
   pic.alt = "Bild på en Aktiv 600 i snön";
-  picDiv.appendChild(pic);
+  leftDiv.appendChild(pic);
 
   const upperSection = document.createElement("section");
   const lowerSection = document.createElement("section");
-  textDiv.append(upperSection, lowerSection);
+  rightDiv.append(upperSection, lowerSection);
   upperSection.textContent = 
   `
   1898 startades företaget Westerås Lantbruksmaskiner i Morgongåva.
