@@ -18,8 +18,7 @@ function createStartPageContent() {
   pic.src = "/assets/logo1.jpg";
   pic.alt = "Bild på Aktivs logotyp";
   picDiv.appendChild(pic);
-
-  textDiv.style.fontSize = "2em";
+  
   textDiv.textContent = "Min hobby - Aktiv 600";
 }
 
