@@ -15,6 +15,8 @@ historyBtn.addEventListener("click", createHistoryContent);
 homeBtn.addEventListener("click", createStartPageContent);
 
 function createStartPageContent() {
+  picDiv.innerHTML = "";
+  textDiv.textContent = "";
   const pic = document.createElement("img");
   pic.src = "/assets/logo1.jpg";
   pic.alt = "Bild på Aktivs logotyp";
@@ -24,7 +26,7 @@ function createStartPageContent() {
 }
 
 function createDataContent() {
-  picDiv.textContent = "Här kommer det en bild";
+  picDiv.innerHTML = "";
   textDiv.textContent = "";
   const dataListElement = document.createElement("ul");
 
@@ -47,19 +49,18 @@ function createDataContent() {
 }
 
 function createGalleryContent() {
-  contentDiv.textContent = 'gallery';
+  picDiv.innerHTML = "";
+  textDiv.textContent = "";
 }
 
 function createHistoryContent() {
-
-  picDiv.textContent = "";
+  picDiv.innerHTML = "";
+  textDiv.textContent = "";
 
   const pic = document.createElement("img");
   pic.src = "/assets/history.jpg";
   pic.alt = "Bild på en Aktiv 600 i snön";
   picDiv.appendChild(pic);
-
-  textDiv.textContent = "";
 
   const upperSection = document.createElement("section");
   const lowerSection = document.createElement("section");
