@@ -17,7 +17,7 @@ homeBtn.addEventListener("click", createStartPageContent);
 
 function createStartPageContent() {
   leftDiv.innerHTML = "";
-  rightDiv.textContent = "";
+  rightDiv.innerHTML = "";
   const pic = document.createElement("img");
   pic.classList.add("startImg");
   pic.src = "/assets/logo1.jpg";
@@ -29,7 +29,7 @@ function createStartPageContent() {
 
 function createDataContent() {
   leftDiv.innerHTML = "";
-  rightDiv.textContent = "";
+  rightDiv.innerHTML = "";
   const dataListElement = document.createElement("ul");
 
   const dataList = [
@@ -52,12 +52,42 @@ function createDataContent() {
 
 function createGalleryContent() {
   leftDiv.innerHTML = "";
-  rightDiv.textContent = "";
+  rightDiv.innerHTML = "";
+
+  const imgFiles = [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg"
+  ];
+
+  imgFiles.forEach((file) => {
+    const pic = document.createElement("div");
+    pic.classList.add("galleryImg");
+    pic.style.backgroundImage = `url("/assets/gallery/${file}")`;
+
+    pic.addEventListener("click", () => {
+      rightDiv.style.backgroundImage = `url("/assets/gallery/${file}")`;
+      rightDiv.style.backgroundSize = "cover";
+      rightDiv.style.backgroundPosition = "center";
+    });
+
+    leftDiv.appendChild(pic);
+  })
+
+  leftDiv.style.flexDirection = "row";
+  leftDiv.style.flexWrap = "wrap";
+  leftDiv.style.justifyContent = "flex-start";
 }
 
 function createHistoryContent() {
   leftDiv.innerHTML = "";
-  rightDiv.textContent = "";
+  rightDiv.innerHTML = "";
 
   const pic = document.createElement("img");
   pic.src = "/assets/history.jpg";

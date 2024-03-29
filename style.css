@@ -74,4 +74,16 @@ button:active {
   .startImg {
     width: 50%;
   }
+  .galleryImg {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    opacity: 0.75;
+    margin: 5px;
+    transition: 0.4s;
+  }
+  .galleryImg:hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
 }
