@@ -19,6 +19,7 @@ main {
 
 .footer {
   font-size: 0.8em;
+  text-align: center;
 }
 
 nav {
@@ -100,13 +101,20 @@ button:active {
     justify-content: space-evenly;
   }
   button {
-    font-size: 1em;
-    margin-right: 0;
+    width: auto;
   }
   .content {
     flex-direction: column;
   }
   .contentHalf {
+    height: 45vh;
     font-size: 1em;
+    span {
+      text-align: center;
+    }
+    .galleryImg {
+      width: 25%;
+      height: 20%;
+    }
   }
 }
