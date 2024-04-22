@@ -1,5 +1,5 @@
 import { defineConfig } from "vite"
 
 export default defineConfig ({
-    'base': '/min-hobby/'
+    "base": "/min-hobby/"
   });
